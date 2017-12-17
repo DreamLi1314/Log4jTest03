@@ -18,16 +18,10 @@
 	
 	<!-- 使用组件扫描器扫描Handler（就不用一个一个配置Handler了） -->
 	<context:component-scan base-package="com.inetsoft.controller"></context:component-scan>
-	
-	<bean
-		class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />
-	
+
 	<!-- 配置视图解析器 解析jsp,默认使用jstl标签 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
-
-
-
 </beans>
